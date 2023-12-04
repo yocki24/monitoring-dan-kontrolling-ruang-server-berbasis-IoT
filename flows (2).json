@@ -1,0 +1,2209 @@
+[
+    {
+        "id": "19c92bfac6cc3573",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b4e9715a08c067dd",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8c3428b4ce5a052",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "16a259154e4e4db4",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4648322e1d012752",
+        "type": "mqtt-broker",
+        "name": "mqtt server",
+        "broker": "138.3.218.179",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "0ffd703235ef4c42",
+        "type": "ui_group",
+        "name": "humi2",
+        "tab": "703cf98b043b0f0d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": "humi2"
+    },
+    {
+        "id": "2d92fc373d7c4d0c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "703cf98b043b0f0d",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4d9f7a7f1f4a4bd2",
+        "type": "ui_group",
+        "name": "humi",
+        "tab": "703cf98b043b0f0d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a46ec33f4f9742d5",
+        "type": "ui_group",
+        "name": "temp",
+        "tab": "703cf98b043b0f0d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2d1d996d0ea07e08",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "localhost",
+        "port": "3306",
+        "db": "dht_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "58266214.e79a9c",
+        "type": "mqtt-broker",
+        "name": "MQTT Mosquitto localhost",
+        "broker": "10.100.115.23",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "65b47ec9.eaafd",
+        "type": "ui_group",
+        "name": "asap1",
+        "tab": "703cf98b043b0f0d",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ea1bc80d.fee498",
+        "type": "influxdb",
+        "hostname": "localhost",
+        "port": "8086",
+        "protocol": "http",
+        "database": "MyDatabase",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x"
+    },
+    {
+        "id": "814811ae.a77e",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "MyDatabase",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x"
+    },
+    {
+        "id": "2d6c889b474fd29b",
+        "type": "ui_group",
+        "name": "temp2",
+        "tab": "703cf98b043b0f0d",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c744c61f.43c208",
+        "type": "mqtt-broker",
+        "name": "Mosquitto",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "65431fe4cd275215",
+        "type": "ui_group",
+        "name": "open weather",
+        "tab": "703cf98b043b0f0d",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f5a9ab171715157",
+        "type": "telegram bot",
+        "botname": "kiyura",
+        "usernames": "kiyura_bot, grub_kiyura",
+        "chatids": "1161632198, -809825188",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "76059dc187a81627",
+        "type": "ui_group",
+        "name": "asap2",
+        "tab": "703cf98b043b0f0d",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3f58d1b9d414d6ba",
+        "type": "ui_group",
+        "name": "Sensor Air",
+        "tab": "703cf98b043b0f0d",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bb1accca9ca8847e",
+        "type": "ui_tab",
+        "name": "Menu Control",
+        "icon": "control_point",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6d4165c1736c1eef",
+        "type": "ui_group",
+        "name": "dehumidifier",
+        "tab": "bb1accca9ca8847e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "72536e3f84d6a875",
+        "type": "ui_group",
+        "name": "Remote AC",
+        "tab": "703cf98b043b0f0d",
+        "order": 9,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "127c4e9eb77e0c9f",
+        "type": "ui_group",
+        "name": "AC",
+        "tab": "bb1accca9ca8847e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "49a5b6c1c629e49b",
+        "type": "ui_group",
+        "name": "Info Dehumidifier",
+        "tab": "703cf98b043b0f0d",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "de378811058a8cb6",
+        "type": "ui_group",
+        "name": "Switch Automatis",
+        "tab": "bb1accca9ca8847e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "339d0edc.4ffe02",
+        "type": "ui_group",
+        "name": "Heure",
+        "tab": "a2490d0e.a872b",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a2490d0e.a872b",
+        "type": "ui_tab",
+        "name": "Homey Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "23c05948ea6420b9",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/humi",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "c95a3b09d029ebf7",
+                "d2d9724761929e7e",
+                "c4a108683aae398e"
+            ]
+        ]
+    },
+    {
+        "id": "c95a3b09d029ebf7",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "4d9f7a7f1f4a4bd2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humi luar ruangan",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "75",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d2d9724761929e7e",
+        "type": "ui_chart",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "4d9f7a7f1f4a4bd2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "humi luar ruangan",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "1",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "46fa78966bf3502e",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/temp",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "382cea0c331c96e6",
+                "6f5f5d19fba6fecf",
+                "1c57e5b0110b430b"
+            ]
+        ]
+    },
+    {
+        "id": "382cea0c331c96e6",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "a46ec33f4f9742d5",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "temp luar ruangan",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6f5f5d19fba6fecf",
+        "type": "ui_chart",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "a46ec33f4f9742d5",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart temp luar ruangan",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "3",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 390,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8fbae5aaa36053e6",
+        "type": "function",
+        "z": "19c92bfac6cc3573",
+        "name": "function 1",
+        "func": "var humi = flow.get('humi')\nvar temp = flow.get('temp')\n\nif(humi == null){\n    humi = 0;\n}\nif(temp == null){\n    temp = 0;\n}\n\n\n\nvar query1 = \"insert into skLuar(suhu, kelembaban) VALUES ('\" + temp + \"', '\" + humi + \"');\";\n\n\n\n\n// INSERT INTO dht_tbl(humi, temp) VALUES('\"+humi+\"', '\"+temp+\"')\n\n// msg.topic = \"insert into dht_tbl(humi, temp) VALUES ('\"+humi+\"', '\"+temp+\"');\";\n// msg.topic = \"insert into dht2_tbl(humi1, temp1, humi2, temp2) VALUES ('\" + humi + \"', '\" + temp + \"','\" + humi2 + \"', '\" + temp2 + \"');\";\n// msg.topic = \"insert into skLuar(suhu, kelembaban) VALUES ('\" + humi + \"', '\" + temp + \"');\";\n// msg.topic = \"insert into skDalam(suhu, kelembaban) VALUES ('\" + humi2 + \"', '\" + temp2 + \"');\";\nmsg.topic = query1;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 380,
+        "wires": [
+            [
+                "a7139a496ea35c75"
+            ]
+        ]
+    },
+    {
+        "id": "a7139a496ea35c75",
+        "type": "mysql",
+        "z": "19c92bfac6cc3573",
+        "mydb": "2d1d996d0ea07e08",
+        "name": "dht-db",
+        "x": 1050,
+        "y": 380,
+        "wires": [
+            [
+                "909651283f88cba0"
+            ]
+        ]
+    },
+    {
+        "id": "c4a108683aae398e",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "humi",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1c57e5b0110b430b",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "7a72d04836c6127c"
+            ]
+        ]
+    },
+    {
+        "id": "909651283f88cba0",
+        "type": "debug",
+        "z": "19c92bfac6cc3573",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "372c0d4e9229fc98",
+        "type": "inject",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 710,
+        "y": 380,
+        "wires": [
+            [
+                "8fbae5aaa36053e6",
+                "d1072a374db6eea0",
+                "360743980f024b29",
+                "ee0eebe353ea0f09"
+            ]
+        ]
+    },
+    {
+        "id": "55efd4f3e2e903fe",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/humi2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 600,
+        "wires": [
+            [
+                "73f512608d0fcbfd",
+                "8a4bb990c824dbbc",
+                "703c0b4a578e28e1"
+            ]
+        ]
+    },
+    {
+        "id": "f59e63396e8ca823",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/temp2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 127,
+        "y": 676.0000286102295,
+        "wires": [
+            [
+                "7ceb38ed7e8896e0",
+                "d14a92c116a2ea6c",
+                "c2a15767528f90a6"
+            ]
+        ]
+    },
+    {
+        "id": "73f512608d0fcbfd",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "0ffd703235ef4c42",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "humi dalam ruangan",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "50",
+        "seg2": "75",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "7ceb38ed7e8896e0",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "2d6c889b474fd29b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "temp dalam ruangan",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "20",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 377,
+        "y": 676.0000286102295,
+        "wires": []
+    },
+    {
+        "id": "8a4bb990c824dbbc",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "humi2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d14a92c116a2ea6c",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 497,
+        "y": 736.0000286102295,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "703c0b4a578e28e1",
+        "type": "ui_chart",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "0ffd703235ef4c42",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart humi dalam ruangan",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 650,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2a15767528f90a6",
+        "type": "ui_chart",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "2d6c889b474fd29b",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart temp dalam ruangan",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 690,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f10398e26627365e",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/asap1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 860,
+        "wires": [
+            [
+                "3d214791423ac1d4",
+                "62e130886b946391",
+                "0bce37dda9653d84"
+            ]
+        ]
+    },
+    {
+        "id": "d90f146b31d38f74",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/raindrop",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 1100,
+        "wires": [
+            [
+                "fa9911766ad4505e",
+                "56da3d52f2fc1132"
+            ]
+        ]
+    },
+    {
+        "id": "3d214791423ac1d4",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "65b47ec9.eaafd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Kondisi Asap",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1024",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "62e130886b946391",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "asap1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "9794d23673b2552a"
+            ]
+        ]
+    },
+    {
+        "id": "fa9911766ad4505e",
+        "type": "change",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "raindrop",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 340,
+        "y": 1120,
+        "wires": [
+            [
+                "3b38100bb37728a1"
+            ]
+        ]
+    },
+    {
+        "id": "56da3d52f2fc1132",
+        "type": "ui_gauge",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "3f58d1b9d414d6ba",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor Ketinggian Air",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1024",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "3b38100bb37728a1",
+        "type": "trigger",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "op1": "",
+        "op2": "{\"type\":\"message\",\"chatId\":\"-809825188\",\"content\":\"Sensor Deteksi Air Terputus\"}",
+        "op1type": "nul",
+        "op2type": "json",
+        "duration": "25",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 610,
+        "y": 1100,
+        "wires": [
+            [
+                "7d9ea770ff20ca93"
+            ]
+        ]
+    },
+    {
+        "id": "7d9ea770ff20ca93",
+        "type": "telegram sender",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "bot": "9f5a9ab171715157",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 970,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1072a374db6eea0",
+        "type": "function",
+        "z": "19c92bfac6cc3573",
+        "name": "function 16",
+        "func": "var humi2 = flow.get('humi2')\nvar temp2 = flow.get('temp2')\nif(humi2 == null){\n    humi2 = 0;\n}\nif(temp2 == null){\n    temp2 = 0;\n}\n\nvar query = \"insert into skDalam(suhu, kelembaban) VALUES ('\" + temp2 + \"', '\" + humi2 + \"');\";\n\n\n// INSERT INTO dht_tbl(humi, temp) VALUES('\"+humi+\"', '\"+temp+\"')\n\n// msg.topic = \"insert into dht_tbl(humi, temp) VALUES ('\"+humi+\"', '\"+temp+\"');\";\n// msg.topic = \"insert into dht2_tbl(humi1, temp1, humi2, temp2) VALUES ('\" + humi + \"', '\" + temp + \"','\" + humi2 + \"', '\" + temp2 + \"');\";\n// msg.topic = \"insert into skLuar(suhu, kelembaban) VALUES ('\" + humi + \"', '\" + temp + \"');\";\n// msg.topic = \"insert into skDalam(suhu, kelembaban) VALUES ('\" + humi2 + \"', '\" + temp2 + \"');\";\nmsg.topic = query;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 440,
+        "wires": [
+            [
+                "a7139a496ea35c75"
+            ]
+        ]
+    },
+    {
+        "id": "360743980f024b29",
+        "type": "function",
+        "z": "19c92bfac6cc3573",
+        "name": "function 17",
+        "func": "var asap1 = flow.get('asap1')\n\nif(asap1 == null){\n    asap1 = 0;\n}\n\n\nvar query = \"insert into mq2(asap1) VALUES ('\" + asap1 + \"');\";\n\n\n\n// INSERT INTO dht_tbl(humi, temp) VALUES('\"+humi+\"', '\"+temp+\"')\n\n// msg.topic = \"insert into dht_tbl(humi, temp) VALUES ('\"+humi+\"', '\"+temp+\"');\";\n// msg.topic = \"insert into dht2_tbl(humi1, temp1, humi2, temp2) VALUES ('\" + humi + \"', '\" + temp + \"','\" + humi2 + \"', '\" + temp2 + \"');\";\n// msg.topic = \"insert into skLuar(suhu, kelembaban) VALUES ('\" + humi + \"', '\" + temp + \"');\";\n// msg.topic = \"insert into skDalam(suhu, kelembaban) VALUES ('\" + humi2 + \"', '\" + temp2 + \"');\";\nmsg.topic = query;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 500,
+        "wires": [
+            [
+                "a7139a496ea35c75"
+            ]
+        ]
+    },
+    {
+        "id": "ee0eebe353ea0f09",
+        "type": "function",
+        "z": "19c92bfac6cc3573",
+        "name": "function 18",
+        "func": "var rain = flow.get('raindrop')\nif(rain == null){\n    rain = 0;\n}\n\n\nvar query = \"insert into raindrop(data) VALUES ('\" + rain + \"');\";\n\n\n\n// INSERT INTO dht_tbl(humi, temp) VALUES('\"+humi+\"', '\"+temp+\"')\n\n// msg.topic = \"insert into dht_tbl(humi, temp) VALUES ('\"+humi+\"', '\"+temp+\"');\";\n// msg.topic = \"insert into dht2_tbl(humi1, temp1, humi2, temp2) VALUES ('\" + humi + \"', '\" + temp + \"','\" + humi2 + \"', '\" + temp2 + \"');\";\n// msg.topic = \"insert into skLuar(suhu, kelembaban) VALUES ('\" + humi + \"', '\" + temp + \"');\";\n// msg.topic = \"insert into skDalam(suhu, kelembaban) VALUES ('\" + humi2 + \"', '\" + temp2 + \"');\";\nmsg.topic = query;\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 560,
+        "wires": [
+            [
+                "a7139a496ea35c75"
+            ]
+        ]
+    },
+    {
+        "id": "9794d23673b2552a",
+        "type": "trigger",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "op1": "",
+        "op2": "{\"type\":\"message\",\"chatId\":\"-809825188\",\"content\":\"Node 1 Terputus\"}",
+        "op1type": "nul",
+        "op2type": "json",
+        "duration": "25",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 650,
+        "y": 880,
+        "wires": [
+            [
+                "7d9ea770ff20ca93"
+            ]
+        ]
+    },
+    {
+        "id": "7a72d04836c6127c",
+        "type": "trigger",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "op1": "",
+        "op2": "{\"type\":\"message\",\"chatId\":\"-809825188\",\"content\":\"Node 2 Terputus\"}",
+        "op1type": "nul",
+        "op2type": "json",
+        "duration": "25",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 630,
+        "y": 500,
+        "wires": [
+            [
+                "7d9ea770ff20ca93"
+            ]
+        ]
+    },
+    {
+        "id": "8252fa87d5364f17",
+        "type": "mqtt in",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "topic": "/kiyura/state",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 1280,
+        "wires": [
+            [
+                "9b70e42797704ad7",
+                "a961ee16e8feb4ba"
+            ]
+        ]
+    },
+    {
+        "id": "9b70e42797704ad7",
+        "type": "debug",
+        "z": "19c92bfac6cc3573",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "ee9f8d99adf39537",
+        "type": "telegram sender",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "bot": "9f5a9ab171715157",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 490,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a961ee16e8feb4ba",
+        "type": "function",
+        "z": "19c92bfac6cc3573",
+        "name": "function 20",
+        "func": "if(msg.payload == \"node1\"){\n    msg.payload = {\n        \"type\": \"message\",\n        \"chatId\": \"-809825188\",\n        \"content\": \"Node1 terhubung\"\n    };\n} else if (msg.payload == \"node2\"){\n    msg.payload = {\n        \"type\": \"message\",\n        \"chatId\": \"-809825188\",\n        \"content\": \"Node2 terhubung\"\n    };\n} else if(msg.payload == \"node3\"){\n    msg.payload = {\n        \"type\": \"message\",\n        \"chatId\": \"-809825188\",\n        \"content\": \"Node3 terhubung\"\n    };\n} else if(msg.payload == \"node4\"){\n    msg.payload = {\n        \"type\": \"message\",\n        \"chatId\": \"-809825188\",\n        \"content\": \"Node4 terhubung\"\n    };\n}\n// msg.payload = {\n//     \"type\": \"message\",\n//     \"chatId\": \"-809825188\",\n//     \"content\": \"Esp Terhubung\"\n// };\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 1380,
+        "wires": [
+            [
+                "ee9f8d99adf39537"
+            ]
+        ]
+    },
+    {
+        "id": "0bce37dda9653d84",
+        "type": "ui_chart",
+        "z": "19c92bfac6cc3573",
+        "name": "",
+        "group": "65b47ec9.eaafd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart Kondisi Asap",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1024",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 390,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2496fbf4c8459c9",
+        "type": "mqtt out",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "topic": "/kiyura/relay",
+        "qos": "1",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4648322e1d012752",
+        "x": 390,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "98ddd8e3b74c4ff5",
+        "type": "ui_button",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "group": "6d4165c1736c1eef",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "nyala",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 60,
+        "wires": [
+            [
+                "f2496fbf4c8459c9"
+            ]
+        ]
+    },
+    {
+        "id": "775bc51456dd4317",
+        "type": "ui_button",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "group": "6d4165c1736c1eef",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "mati",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 160,
+        "wires": [
+            [
+                "f2496fbf4c8459c9"
+            ]
+        ]
+    },
+    {
+        "id": "514be07930856138",
+        "type": "function",
+        "z": "b4e9715a08c067dd",
+        "name": "function 3",
+        "func": "var relay = msg.payload;\n\nmsg.topic = \"insert into statusDehumi(status) VALUES ('\" + relay + \"');\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "16d9d8b44a9cf05e"
+            ]
+        ]
+    },
+    {
+        "id": "16d9d8b44a9cf05e",
+        "type": "mysql",
+        "z": "b4e9715a08c067dd",
+        "mydb": "2d1d996d0ea07e08",
+        "name": "",
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "431d7034481ce2a4"
+            ]
+        ]
+    },
+    {
+        "id": "431d7034481ce2a4",
+        "type": "debug",
+        "z": "b4e9715a08c067dd",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5887e0aa05439ef9",
+        "type": "mqtt in",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "topic": "/kiyura/rstate",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "4648322e1d012752",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "514be07930856138"
+            ]
+        ]
+    },
+    {
+        "id": "5d57b9693267a4c0",
+        "type": "ui_button",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "group": "127c4e9eb77e0c9f",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "nyala",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 360,
+        "wires": [
+            [
+                "ef5624a998e1c595"
+            ]
+        ]
+    },
+    {
+        "id": "ed40bc550282eb87",
+        "type": "ui_button",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "group": "127c4e9eb77e0c9f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "mati",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 480,
+        "wires": [
+            [
+                "ef5624a998e1c595"
+            ]
+        ]
+    },
+    {
+        "id": "ef5624a998e1c595",
+        "type": "mqtt out",
+        "z": "b4e9715a08c067dd",
+        "name": "",
+        "topic": "/kiyura/ac",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4648322e1d012752",
+        "x": 340,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "fa6405d4a46f65c2",
+        "type": "telegram command",
+        "z": "f8c3428b4ce5a052",
+        "name": "",
+        "command": "/info",
+        "description": "",
+        "registercommand": false,
+        "language": "",
+        "scope": "default",
+        "bot": "9f5a9ab171715157",
+        "strict": false,
+        "hasresponse": true,
+        "useregex": false,
+        "removeregexcommand": false,
+        "outputs": 2,
+        "x": 90,
+        "y": 60,
+        "wires": [
+            [
+                "e26ead567c71c1c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e26ead567c71c1c8",
+        "type": "function",
+        "z": "f8c3428b4ce5a052",
+        "name": "function 6",
+        "func": "var opts = {\n    reply_markup: JSON.stringify({\n        \"inline_keyboard\": [[\n            {\n                \"text\": \"Luar Ruangan\",\n                \"callback_data\": \"1\"\n            },\n            {\n                \"text\": \"Dalam Ruangan\",\n                \"callback_data\": \"2\"\n            },\n            {\n                \"text\": \"Status Dehumidifier\",\n                \"callback_data\": \"3\"\n            },\n            {\n                \"text\": \"Status AC\",\n                \"callback_data\": \"4\"\n            }]\n        ]\n    })\n};\n\nmsg.error = false;\n\nmsg.payload.content = 'Selection?';\nmsg.payload.options = opts;\nmsg.payload.chatId = \"-809825188\";\nmsg.payload.type = \"message\";\n\nreturn [msg];",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "2e6dab7e9730888c"
+            ]
+        ]
+    },
+    {
+        "id": "2e6dab7e9730888c",
+        "type": "telegram sender",
+        "z": "f8c3428b4ce5a052",
+        "name": "",
+        "bot": "9f5a9ab171715157",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 710,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8413e3f6256be1ac",
+        "type": "telegram event",
+        "z": "f8c3428b4ce5a052",
+        "name": "",
+        "bot": "9f5a9ab171715157",
+        "event": "callback_query",
+        "autoanswer": false,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "4fa0ab70867fabc7"
+            ]
+        ]
+    },
+    {
+        "id": "4fa0ab70867fabc7",
+        "type": "function",
+        "z": "f8c3428b4ce5a052",
+        "name": "function 7",
+        "func": "msg.callback = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "33cd9a2164658030"
+            ]
+        ]
+    },
+    {
+        "id": "33cd9a2164658030",
+        "type": "function",
+        "z": "f8c3428b4ce5a052",
+        "name": "function 13",
+        "func": "// msg.topic = \"SELECT * FROM mq2 ORDER BY id DESC LIMIT 1; SELECT * FROM dht2_tbl ORDER BY id DESC LIMIT 1; SELECT * FROM open_weather ORDER BY id DESC LIMIT 1; SELECT * FROM raindrop ORDER BY id DESC LIMIT 1; SELECT * FROM statusDehumi ORDER BY id DESC LIMIT 1; SELECT * FROM statusAc ORDER BY id DESC LIMIT 1\";\nvar query1 = \"SELECT * FROM mq2 ORDER BY id DESC LIMIT 1;\";\nvar query3 = \"SELECT * FROM raindrop ORDER BY id DESC LIMIT 1;\";\nvar query4 = \"SELECT * FROM skDalam ORDER BY id DESC LIMIT 1;\";\nvar query5 = \"SELECT * FROM skLuar ORDER BY id DESC LIMIT 1;\";\nvar query6 = \"SELECT * FROM statusDehumi ORDER BY id DESC LIMIT 1;\";\nvar query7 = \"SELECT * FROM statusAc ORDER BY id DESC LIMIT 1;\";\n\nmsg.topic = query1 + query3 + query4 + query5 + query6 + query7;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "c0bd40047c8865b0"
+            ]
+        ]
+    },
+    {
+        "id": "c0bd40047c8865b0",
+        "type": "mysql",
+        "z": "f8c3428b4ce5a052",
+        "mydb": "2d1d996d0ea07e08",
+        "name": "",
+        "x": 570,
+        "y": 240,
+        "wires": [
+            [
+                "93b58f5bbd7f9e2f",
+                "45a0bdcaa50bc3da"
+            ]
+        ]
+    },
+    {
+        "id": "93b58f5bbd7f9e2f",
+        "type": "debug",
+        "z": "f8c3428b4ce5a052",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "45a0bdcaa50bc3da",
+        "type": "function",
+        "z": "f8c3428b4ce5a052",
+        "name": "function 14",
+        "func": "var data = msg.payload;\nvar humi1, temp1, humi2, temp2, asap1, air, ac, dehumi;\n\nasap1 = data[0][0]['asap1'];\n\nair = data[1][0]['data'];\nhumi2 = data[2][0]['kelembaban'];\ntemp2 = data[2][0]['suhu'];\nhumi1 = data[3][0]['kelembaban'];\ntemp1 = data[3][0]['suhu'];\ndehumi = data[4][0]['status'];\nac = data[5][0]['status'];\n\n\nmsg.payload = asap1;\nmsg.payload = humi1;\nmsg.payload = temp1;\nmsg.payload = humi2;\nmsg.payload = temp2;\nmsg.payload = air;\nmsg.payload = dehumi;\nmsg.payload = ac;\n\nswitch (msg.callback.content) {\n    case \"1\":\n        msg.payload = {\n            \"type\": \"message\",\n            \"chatId\": \"-809825188\",\n            \"content\": \"Kondisi di luar ruang server adalah sebagai berikut : \" + \"\\n\" +\n                \"Kelembaban luar ruangan \" + humi1 + \" %\\n\" +\n                \"Suhu luar ruangan \" + temp1 + \" °C\"\n        };\n        break;\n    case \"2\":\n        msg.payload = {\n            \"type\": \"message\",\n            \"chatId\": \"-809825188\",\n            \"content\": \"Kondisi di dalam ruang server adalah sebagai berikut : \" + \"\\n\" +\n                \"Kelembaban \" + humi2 + \" %\\n\" +\n                \"Suhu \" + temp2 + \" °C\\n\" +\n                \"Ketinggian air menggenang \" + air + \"\\n\" +\n                \"Kondisi asap 1 \" + asap1 \n                \n        };\n        break;\n    case \"3\":\n        msg.payload = {\n            \"type\": \"message\",\n            \"chatId\": \"-809825188\",\n            \"content\": \"Status dehumidifier adalah \" + dehumi\n        };\n        break;\n    case \"4\":\n        msg.payload = {\n            \"type\": \"message\",\n            \"chatId\": \"-809825188\",\n            \"content\": \"Status air conditioner adalah \" + ac\n        };\n        break;\n    default:\n        msg.payload = {\n            \"type\": \"message\",\n            \"chatId\": \"-809825188\",\n            \"content\": \"Invalid command\"\n        };\n        break;\n}\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "93b58f5bbd7f9e2f",
+                "2e6dab7e9730888c"
+            ]
+        ]
+    },
+    {
+        "id": "b6cad737bef61751",
+        "type": "inject",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/3 0-22 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "f717fc77ede9cf70"
+            ]
+        ]
+    },
+    {
+        "id": "f717fc77ede9cf70",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 19",
+        "func": "var queryDalam = \"SELECT AVG(suhu), AVG(kelembaban) FROM skDalam WHERE waktu >= NOW() - INTERVAL 3 MINUTE;\";\nvar queryLuar = \"SELECT AVG(suhu), AVG(kelembaban) FROM skLuar WHERE waktu >= NOW() - INTERVAL 3 MINUTE;\";\n// var queryAsap = \"select * from mq2 order by id desc limit 1;\";\n// var queryAir = \"select * from raindrop order by id desc limit 1;\";\nmsg.topic = queryDalam + queryLuar ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 80,
+        "wires": [
+            [
+                "0e764c642f634d89"
+            ]
+        ]
+    },
+    {
+        "id": "0e764c642f634d89",
+        "type": "mysql",
+        "z": "16a259154e4e4db4",
+        "mydb": "2d1d996d0ea07e08",
+        "name": "",
+        "x": 490,
+        "y": 80,
+        "wires": [
+            [
+                "0779e0e369e45b30",
+                "54e025084e3afbd6",
+                "256a7344ae0b23de",
+                "8f66359fcc07a850",
+                "73828fb3b96e3603"
+            ]
+        ]
+    },
+    {
+        "id": "e44a404f0b73dee2",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 21",
+        "func": "var anggotaSuhu = {\n    \"sangatDingin\": [16, 17, 18],\n    \"dingin\": [19, 20, 21],\n    \"hangat\": [22, 23, 24],\n    \"panas\": [25, 26, 27],\n    \"sangatPanas\": [28, 29, 30]\n};\n\n// var data = msg.payload;\nvar tempDalam, templuar, query1, query2;\n\ntempDalam = flow.get(\"avgSuhuDalam\");\n// var humiDalam = data[0][0]['kelembaban'];\ntempluar = flow.get(\"avgSuhuLuar\");\n// var humiluar = data[1][0]['kelembaban'];\nvar statusDalam, statusLuar, statusAc;\n// var sangatDingin = [16, 17, 18];\n// var dingin = [19, 20, 21];\n// var hangat = [22, 23, 24];\n// var panas = [25, 26, 27];\n// var sangatPanas = [28, 29, 30];\n\n// for (let i = 0; i < sangatDingin.length; i++) {\n//     if(tempDalam < sangatDingin[i]){\n//         msg.payload = \"suhu dingin\";\n//     } \n    \n// }\n    \n// }\nfor (let key in anggotaSuhu) {\n    if (key === \"sangatDingin\") {\n        for (let i = 0; i < anggotaSuhu[key].length; i++) {\n            if (tempDalam <= anggotaSuhu[key][i]) {\n                statusDalam = \"suhu sangat dingin\";\n            }\n            if (templuar <= anggotaSuhu[key][i]) {\n                statusLuar = \"suhu sangat dingin\";\n            }\n\n        }\n    } else if (key === \"dingin\") {\n        for (let i = 0; i < anggotaSuhu[key].length; i++) {\n            if (tempDalam === anggotaSuhu[key][i]) {\n                statusDalam = \"suhu dingin\";\n            \n            } \n            if (templuar === anggotaSuhu[key][i]){\n                statusLuar = \"suhu dingin\";\n                // statusAc = \"nyala\";\n            }\n\n        }\n    } else if (key === \"hangat\") {\n        for (let i = 0; i < anggotaSuhu[key].length; i++) {\n            if (tempDalam === anggotaSuhu[key][i]) {\n                statusDalam = \"suhu hangat\";\n            } \n            if (templuar === anggotaSuhu[key][i]){\n                statusLuar = \"suhu hangat\";\n                // statusAc = \"nyala\";\n            }\n\n        }\n    } else if (key === \"panas\") {\n        for (let i = 0; i < anggotaSuhu[key].length; i++) {\n            if (tempDalam === anggotaSuhu[key][i]) {\n                statusDalam = \"suhu panas\";\n            }\n            if (templuar === anggotaSuhu[key][i]){\n                statusLuar = \"suhu panas\";\n                // statusAc = \"nyala\";\n            }\n\n        }\n    } else if (key === \"sangatPanas\") {\n        for (let i = 0; i < anggotaSuhu[key].length; i++) {\n            if (tempDalam === anggotaSuhu[key][i]) {\n                statusDalam = \"suhu sangat panas\";\n            } \n            if (templuar === anggotaSuhu[key][i]){\n                statusLuar = \"suhu sangat panas\";\n                // statusAc = \"nyala\";\n            }\n\n        }\n    }\n}\n// msg.payload = {\n//     \"suhu Luar: \" : statusLuar,\n//     \"suhu dalam: \" : statusDalam,\n//     \"status AC: \": statusAc,\n// };\nquery1 = \"insert into statusSuhuLuar(avgSuhu, statusSuhu) values('\"+templuar+\"', '\"+statusLuar+\"');\";\nquery2 = \"insert into statusSuhuDalam(avgSuhu, statusSuhu) values('\" + tempDalam + \"', '\" + statusDalam + \"');\";\n\nmsg.topic = query1 + query2;\n// msg.payload = statusAc;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 240,
+        "wires": [
+            [
+                "0779e0e369e45b30",
+                "fddd5d7d60e2bce0",
+                "0e764c642f634d89"
+            ]
+        ]
+    },
+    {
+        "id": "54e025084e3afbd6",
+        "type": "change",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgSuhuLuar",
+                "pt": "flow",
+                "to": "payload[1][0][\"AVG(suhu)\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 700,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a4c9e57ac3f8678c",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 22",
+        "func": "var suhu = flow.get('auto');\nmsg.payload = suhu;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 340,
+        "wires": [
+            [
+                "0779e0e369e45b30"
+            ]
+        ]
+    },
+    {
+        "id": "0779e0e369e45b30",
+        "type": "debug",
+        "z": "16a259154e4e4db4",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "96a6dcd09f879f0c",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 23",
+        "func": "var queryDalam = \"SELECT AVG(suhu) FROM skLuar WHERE waktu >= NOW() - INTERVAL 3 MINUTE;\";\nmsg.topic = queryDalam;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "256a7344ae0b23de",
+        "type": "change",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgSuhuDalam",
+                "pt": "flow",
+                "to": "payload[0][0][\"AVG(suhu)\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f66359fcc07a850",
+        "type": "change",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgKelembabanLuar",
+                "pt": "flow",
+                "to": "payload[1][0][\"AVG(kelembaban)\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73828fb3b96e3603",
+        "type": "change",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "avgKelembabanDalam",
+                "pt": "flow",
+                "to": "payload[0][0][\"AVG(kelembaban)\"]",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d1089bfa0638fec",
+        "type": "ui_switch",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "label": "Auto on/off",
+        "tooltip": "",
+        "group": "de378811058a8cb6",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "856801097ea6f5fa"
+            ]
+        ]
+    },
+    {
+        "id": "856801097ea6f5fa",
+        "type": "change",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "auto",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "a4c9e57ac3f8678c"
+            ]
+        ]
+    },
+    {
+        "id": "d81aa8bc.35b81",
+        "type": "ui_template",
+        "z": "16a259154e4e4db4",
+        "group": "339d0edc.4ffe02",
+        "name": "Node-Red Dashboard Custom CSS",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\nroot, a, button, p, div {\n    -webkit-user-select: none !important;\n}\n\nbody {\n    background: -webkit-linear-gradient(\n    55deg,\n    #009785 0%,\n    #245aa5 50%,\n    #b800e9 100%\n    );\n    -webkit-touch-callout: none !important;\n}\n\nbody.nr-dashboard-theme md-toolbar,\nbody.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n    color: #FFFFFF;\n}\n\nui-card-panel {\n    background-color: rgba(255,255,255,0.1) !important;\n    border-radius: 10px !important;\n}\n    \n#Homey_Dashboard_Navigation {\n    background-color: transparent !important;\n    border-radius: 10px !important;\n}\n\n.md-card.md-default-theme, md-card {\n    border-radius: 10px;\n}\n\n.nr-dashboard-switch.ng-scope {\n    background-color: rgba(255,255,255,.2) !important;\n}\n\n.nr-dashboard-switch.ng-scope:hover {\n    background-color: rgba(255,255,255,.5) !important;\n}\n\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n    background-color: rgba(255,255,255,.2);\n}\n\n.md-button {\n    border-radius: 10px;\n}\n\n.nr-dashboard-cardpanel layout-column {\n    background-color: rgba(255,255,255,0.2) !important;\n    background-color: transparent !important;\n    border-radius: 10px !important;\n}\n\n.nr-dashboard-theme ui-card-panel {\n    border: none;\n}\n\n.nr-dashboard-template {\n    overflow-y: visible;\n}\n.nr-dashboard-theme md-content md-card {\n    background-color: transparent !important;\n}\n\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n    color: rgba(255, 255, 255, 0.5);\n}\n</style>\n\n<script>\ndocument.ontouchmove = function (e) {\n    e.preventDefault();\n}\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "x": 160,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a58ba989d9b2e476",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 24",
+        "func": "var suhuLuar = flow.get(\"name\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "78e59e5e0a93b16e",
+        "type": "inject",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "180",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "e44a404f0b73dee2",
+                "2c72e310fe901830"
+            ]
+        ]
+    },
+    {
+        "id": "fddd5d7d60e2bce0",
+        "type": "mqtt out",
+        "z": "16a259154e4e4db4",
+        "name": "",
+        "topic": "/kiyura/acRemote",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4648322e1d012752",
+        "x": 790,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2c72e310fe901830",
+        "type": "function",
+        "z": "16a259154e4e4db4",
+        "name": "function 25",
+        "func": "var anggotaHumi = {\n    sangatKering: {\n        batasBawah: 0,\n        batasAtas: 19,\n    },\n    kering: {\n        batasBawah: 20,\n        batasAtas: 44,\n    },\n    normal: {\n        batasBawah: 45,\n        batasAtas: 60,\n    },\n    lembab: {\n        batasBawah: 61,\n        batasAtas: 80,\n    },\n    sangatLembab: {\n        batasBawah: 81,\n        batasAtas: 100,\n    },\n};\n\nvar humiDalam = flow.get('avgKelembabanDalam');\nvar humiLuar = flow.get('avgKelembabanLuar');\nvar statusHumiLuar, statusHumiDalam, query1, query2;\nlet kategoriDalam = null, kategoriLuar = null;\nlet i = 0;\nconst keys = Object.keys(anggotaHumi);\n\n// Menghitung kategori untuk kelembaban dalam ruangan\nwhile (i < keys.length) {\n    const namaKategori = keys[i];\n    const batasBawah = anggotaHumi[namaKategori].batasBawah;\n    const batasAtas = anggotaHumi[namaKategori].batasAtas;\n\n    if (humiDalam >= batasBawah && humiDalam <= batasAtas) {\n        kategoriDalam = namaKategori;\n        break;\n    }\n    i++;\n}\n\n// Menghitung kategori untuk kelembaban luar ruangan\ni = 0;\nwhile (i < keys.length) {\n    const namaKategori = keys[i];\n    const batasBawah = anggotaHumi[namaKategori].batasBawah;\n    const batasAtas = anggotaHumi[namaKategori].batasAtas;\n\n    if (humiLuar >= batasBawah && humiLuar <= batasAtas) {\n        kategoriLuar = namaKategori;\n        break;\n    }\n    i++;\n}\n\nstatusHumiLuar = kategoriLuar;\nstatusHumiDalam = kategoriDalam;\n\nmsg.payload = {\n    kelembabanLuar: statusHumiLuar,\n    kelembabanDalam: statusHumiDalam\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "0779e0e369e45b30"
+            ]
+        ]
+    }
+]
